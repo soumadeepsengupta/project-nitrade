@@ -15,6 +15,7 @@ export default {
   theme: {
     extend: {
       fontFamily: {
+        satoshi: ["Satoshi"],
         italic: ["EditorialNew"],
         helvetica: ["Helvetica"],
       },
@@ -24,6 +25,8 @@ export default {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        'blu': "#2A51FF",
+        'cream': "#F5F5DC",
       },
       animation: {
         first: "moveVertical 30s ease infinite",
