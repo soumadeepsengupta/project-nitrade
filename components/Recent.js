@@ -2,47 +2,46 @@
 import { Heart } from 'lucide-react';
 import { useState } from 'react';
 
-const items = [
-  {
-    name: "Bottle",
-    price: "50",
-    image: "/Chinnari.jpeg",
-    alt: "Water bottle with blue color"
-  },
-  {
-    name: "Sports Shoe",
-    price: "2,000",
-    image: "/bg.jpg",
-    alt: "Blue and pink sports shoes"
-  },
-  {
-    name: "Ladies Cycle",
-    price: "5,500",
-    image: "/bg2.jpg",
-    alt: "Light blue ladies bicycle with basket"
-  },
-  {
-    name: "Macbook Air",
-    price: "90,000",
-    image: "/Abir.jpeg",
-    alt: "Silver Macbook Air laptop"
-  },
-  {
-    name: "Realme Buds",
-    price: "1,500",
-    image: "/profile pic.jpg",
-    alt: "White Realme wireless earbuds",
-    isBargain: true
-  },
-  {
-    name: "Wi-Fi Router",
-    price: "2,000",
-    image: "/Soumadeep.jpeg",
-    alt: "Black Wi-Fi router with antennas"
-  }
-];
-
 const Recent = () => {
+  const items = [
+    {
+      name: "Bottle",
+      price: "50",
+      image: "/Chinnari.jpeg",
+      alt: "Water bottle with blue color"
+    },
+    {
+      name: "Sports Shoe",
+      price: "2,000",
+      image: "/bg.jpg",
+      alt: "Blue and pink sports shoes"
+    },
+    {
+      name: "Ladies Cycle",
+      price: "5,500",
+      image: "/bg2.jpg",
+      alt: "Light blue ladies bicycle with basket"
+    },
+    {
+      name: "Macbook Air",
+      price: "90,000",
+      image: "/Abir.jpeg",
+      alt: "Silver Macbook Air laptop"
+    },
+    {
+      name: "Realme Buds",
+      price: "1,500",
+      image: "/profile pic.jpg",
+      alt: "White Realme wireless earbuds",
+      isBargain: true
+    },
+    {
+      name: "Wi-Fi Router",
+      price: "2,000",
+      image: "/Soumadeep.jpeg",
+      alt: "Black Wi-Fi router with antennas"
+    }
+  ];
   const [wishlist, setWishlist] = useState([]);
   const [notification, setNotification] = useState({ show: false, itemName: '' });
 
@@ -77,7 +76,7 @@ const Recent = () => {
         </div>
       )}
 
-      <h2 className="text-9xl md:text-5xl font-bold tracking-[-4] text-blu m-12">
+      <h2 className="text-9xl md:text-5xl font-bold tracking-[-2] text-blu mt-6 mb-6">
         based on your recent searches.
       </h2>
 
