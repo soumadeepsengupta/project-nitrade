@@ -170,7 +170,7 @@ const Hero = () => {
       {/* Content (with relative positioning to appear above background) */}
       <div className="relative z-10 flex-grow flex flex-col">
         {/* Navigation */}
-        <nav className="fixed top-0 left-0 right-0 flex items-center justify-between p-4 lg:px-8 backdrop-blur-md bg-black/30 z-50">
+        <nav className="fixed top-0 left-0 right-0 flex items-center justify-between p-4 lg:px-8 backdrop-blur-sm z-50">
           <div className="flex items-center space-x-2">
             <img
               src="/logo-nitrade.svg"
@@ -261,10 +261,7 @@ const Hero = () => {
         {/* Search Section */}
         <div className="max-w-4xl mx-auto py-24 flex-grow flex flex-col justify-center items-center">
           <div
-            className="w-full rounded-xl p-6 border-cream border-2"
-            style={{
-              backgroundImage: "url('/Frame 36768 (2).png')",
-            }}
+            className="w-full rounded-xl p-6 backdrop-blur-lg bg-white/20 border-cream/60 border-2"
           >
             <div className="relative mb-4">
               <input
@@ -312,13 +309,13 @@ const Hero = () => {
 
           {/* Hero Section */}
           <div className="text-center mt-8">
-            <h1 className="text-4xl md:text-6xl font-bold mb-4 text-cream font-helvetica">
+            <h1 className="text-4xl md:text-6xl font-bold mb-4 text-cream font-helvetica tracking-tight">
               Buy. Sell. Swap.
             </h1>
             <p className="text-2xl md:text-4xl font-satoshi mb-6 text-cream">
               Simplify Your Campus Life!
             </p>
-            <p className="text-xl mb-8 text-cream italic">
+            <p className="text-sm mb-8 text-cream leading-tight">
               FIND WHAT YOU NEED, SELL WHAT YOU DON'T!
             </p>
             <button className="bg-blu text-lg font-semibold text-cream font-satoshi px-6 py-3 rounded-lg hover:bg-cream hover:text-blu transition-colors duration-200">

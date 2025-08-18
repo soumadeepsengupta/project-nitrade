@@ -9,7 +9,7 @@ const CategoryButtons = () => {
       {categories.map((item, index) => (
         <button
           key={index}
-          className="relative bg-[#F5F5DC] text-black font-satoshi font-medium rounded-xl p-6 border-2 border-[#0D00FF] font-normal hover:bg-[#0D00FF] hover:text-[#F5F5DC] group"
+          className="relative bg-cream text-black font-satoshi font-medium rounded-xl p-6 border-2 border-blu hover:bg-blu hover:text-cream group"
         >
           <div className="flex flex-col items-start">
             {/* Split text into multiple lines */}
@@ -26,7 +26,7 @@ const CategoryButtons = () => {
 
       {/* More button */}
 
-      <button className="bg-[#2A51FF] font-satoshi text-[#F5F5DC] relative rounded-xl p-6 text-xl font-semibold hover:bg-[#F5F5DC] hover:text-[#0D00FF]">
+      <button className="bg-[#2A51FF] font-satoshi text-cream relative rounded-xl p-6 text-xl font-semibold hover:bg-cream hover:text-blu">
         <div>More</div>
         <PlusIcon className="w-5 h-5 absolute top-4 right-4" />
       </button>
