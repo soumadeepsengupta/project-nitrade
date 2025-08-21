@@ -60,7 +60,7 @@ export default function Carousel() {
   return (
     <div className="relative w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div 
-        className="overflow-hidden relative rounded-xl shadow-lg bg-white/5 backdrop-blur-sm"
+        className="overflow-hidden relative rounded-xl "
         style={{ height: 'calc(100vh - 400px)', minHeight: '400px' }}
         onMouseDown={handleDragStart}
         onMouseMove={handleDragMove}
@@ -79,12 +79,12 @@ export default function Carousel() {
             transition={{ duration: 0.3 }}
             className="absolute inset-0 flex items-center justify-center"
           >
-            <div className="relative w-full h-full max-w-5xl mx-auto">
+            <div className="relative w-full h-full max-w-5xl mx-auto ">
               <Image
                 src={slides[currentSlide].src}
                 alt={slides[currentSlide].alt}
                 fill
-                className="object-contain p-8"
+                className="object-contain p-8 "
                 priority
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 70vw"
               />

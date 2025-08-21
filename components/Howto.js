@@ -63,11 +63,11 @@ const Howto = () => {
   }, []);
   return (
     <section className='bg-blu rounded-t-xl'>
-       <div className='flex flex-grid col-span-2 items-center justify-center py-8 max-w-7xl mx-auto'>
+       <div className='grid grid-cols-1 md:grid-cols-2 gap-8 items-center py-8 max-w-7xl mx-auto'>
         <div className='flex-row items-center justify-center mb-4'>
           <div className='text-9xl md:text-5xl font-bold tracking-[-2] text-cream mt-6 mb-6'>your marketplace for second-hand college goods.</div>
           <div className='text-lg/6 text-black mb-6 font-satoshi font-semibold tracking-tighter '>TradeBin NITR is a platform connects students looking to buy and sell second-hand items. Enjoy a hassle-free experience with secure transactions and easy listings.</div>
-          <button className='bg-cream text-blu font-satoshi font-semibold rounded-lg px-6 py-3 hover:bg-blu hover:text-cream hover:border-cream hover:border-2 transition-all duration-300'>Get Started</button>
+          <button className='bg-cream text-blu font-satoshi font-semibold rounded-lg px-6 py-3 mt-12 hover:bg-blu hover:text-cream hover:border-cream hover:border-2 transition-all duration-300'>Get Started</button>
         </div>
         <div>
           <Carousel/>
