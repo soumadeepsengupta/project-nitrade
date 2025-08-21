@@ -91,6 +91,7 @@ import {
 } from "lucide-react";
 import CategoryButtons from "./CategoryButtons";
 
+
 const menuItems = ["Home", "Home", "Home", "Home"];
 
 const Hero = () => {
@@ -322,6 +323,9 @@ const Hero = () => {
               Start selling
             </button>
           </div>
+          
+          {/* Carousel Section */}
+
         </div>
       </div>
       {/* Bottom Arrow */}

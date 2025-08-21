@@ -1,6 +1,8 @@
 import Hero from "@/components/Hero";
 import Recent from "@/components/Recent";
 import Best from "@/components/Best";
+import Howto from "@/components/Howto";
+
 
 export default function Home() {
   return (
@@ -8,6 +10,7 @@ export default function Home() {
       <Hero />
       <Recent />
       <Best />
+      <Howto/>
     </>
   );
 }
